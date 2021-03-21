@@ -48,4 +48,4 @@ const biodata = {
             ],
     intersetInCoding : true,
 }
-console.log(biodata)
+console.log(biodata);
