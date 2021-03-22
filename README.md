@@ -1,1 +1,1 @@
-UNTUK FOLDER SELAIN TUGAS BERISI TENTANG LIVE CODING.
+Untuk folder selain tugas berisi tentang live coding. 
