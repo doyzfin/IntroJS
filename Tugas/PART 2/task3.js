@@ -8,7 +8,9 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
       (dataArray) => dataArray >= nilaiAwal && dataArray <= nilaiAkhir
     );
     const sortSeleksi = seleksi.sort((a, b) => (a > b ? 1 : -1));
-    return sortSeleksi;
+    return console.log(sortSeleksi);
   }
 }
-console.log(seleksiNilai(5, 20, [2, 25, 4, 14, 17, 30, 8]));
+seleksiNilai(5, 20, [2, 25, 4, 14, 17, 30, 8]);
+// seleksiNilai(25, 20, [2, 25, 4, 14, 17, 30, 8]);
+// seleksiNilai(5, 20, [2, 25]);
