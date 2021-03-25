@@ -8,9 +8,13 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
       (dataArray) => dataArray >= nilaiAwal && dataArray <= nilaiAkhir
     );
     const sortSeleksi = seleksi.sort((a, b) => (a > b ? 1 : -1));
-    return console.log(sortSeleksi);
+    if (sortSeleksi.length === 0) {
+      console.log("Jumlah angka tidak ada dalam dataArray");
+    } else {
+      return console.log(sortSeleksi);
+    }
   }
 }
 seleksiNilai(5, 20, [2, 25, 4, 14, 17, 30, 8]);
-// seleksiNilai(25, 20, [2, 25, 4, 14, 17, 30, 8]);
-// seleksiNilai(5, 20, [2, 25]);
+seleksiNilai(25, 20, [2, 25, 4, 14, 17, 30, 8]);
+seleksiNilai(5, 10, [2, 25, 344, 45, 67]);
