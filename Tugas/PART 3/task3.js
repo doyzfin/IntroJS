@@ -16,15 +16,32 @@ const saleTicket = (num) => {
     const cac = newMap.get(acs);
     const csd = newMap.get(cad);
     if (cac) {
-      resolve(console.log(" Kategori yang tersedia ",csd,`\n`," Pilihan Anda",cac,`\n`)
+      resolve(
+        console.log(
+          " Kategori yang tersedia ",
+          csd,
+          `\n`,
+          " Pilihan Anda",
+          cac,
+          `\n`
+        )
       );
     } else {
-      reject(console.log(" Kategori yang tersedia ",csd,`\n`,"Silahkan ganti No Tiket ",`${num}`,"Dengan Nomer Tiket yang Tersedia",`\n`)
+      reject(
+        console.log(
+          " Kategori yang tersedia ",
+          csd,
+          `\n`,
+          "Silahkan ganti No Tiket ",
+          `${num}`,
+          "Dengan Nomer Tiket yang Tersedia",
+          `\n`
+        )
       );
     }
   });
 };
-saleTicket(2)
+saleTicket(4)
   .then((ress) => {
     return ress;
   })

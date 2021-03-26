@@ -14,7 +14,7 @@ const cekHariKerja = (day) => {
   });
 };
 //Promise
-cekHariKerja("senin")
+cekHariKerja("sabtu")
   .then((res) => {
     console.log(res);
   })
@@ -36,7 +36,7 @@ const coba = async (day) => {
     console.log(error);
   }
 };
-coba("jumat");
+coba("sabtu");
 // Penjelasan :
 // Cara kerja nya adalah membuat satu function baru, dengan async await nya dan harus ada try dan catch yang berfungsi :
 // try itu belum tentu benar dan juga belum tentu salah dan jika salah maka akan langsung dilempar ke catch dan juga

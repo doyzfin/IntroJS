@@ -1,7 +1,20 @@
 const getmonth = (callback) => {
   setTimeout(() => {
     let error = false;
-    let month = ["January","Febuary","March","April","May","June","July","August", "September","October","November","Desember",];
+    let month = [
+      "January",
+      "Febuary",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "Desember",
+    ];
     if (!error) {
       callback(null, month);
     } else {
@@ -11,11 +24,7 @@ const getmonth = (callback) => {
 };
 getmonth((prm1, month) => {
   if (prm1 === null) {
-    const newM = new Map();
-    const list = [];
-    newM.set(list, month);
-    const ress = newM.get(list);
-    console.log(ress);
+    const has = month.map((el) => console.log(el));
   } else {
     console.log(prm1, month);
   }
